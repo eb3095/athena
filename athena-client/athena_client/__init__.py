@@ -37,7 +37,7 @@ def init():
     global PORCUPINE, RECOGNIZER, CONFIG
 
     with open("/etc/athena/config.json") as f:
-        CONFIG = json.load(f)
+        CONFIG.update(json.load(f))
 
     PORCUPINE = pvporcupine.create(
         keyword_paths=[

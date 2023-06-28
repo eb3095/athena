@@ -39,13 +39,14 @@ def prompt(dialog):
 
 
 def generate():
+    os.makedirs(f"{VOICE_DIR}", exist_ok=True)
     for diag in DIALOG.keys():
         prompt(diag)
 
 
 with open("/etc/athena/config.json") as f:
-    CONFIG = json.load(f)
+    CONFIG.update(json.load(f))
 with open("/etc/athena/dialog.json") as f:
-    DIALOG = json.load(f)
+    DIALOG.update(json.load(f))
 
 generate()

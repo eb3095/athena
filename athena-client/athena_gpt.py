@@ -66,5 +66,5 @@ if len(sys.argv) != 3:
 
 
 with open("/etc/athena/config.json") as f:
-    CONFIG = json.load(f)
+    CONFIG.update(json.load(f))
 prompt(sys.argv[1])
