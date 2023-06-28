@@ -1,0 +1,13 @@
+{
+    "openai": {
+        "openai_key": "snip",
+        "tokens": 1024,
+        "temperature": 0.7,
+        "n": 1
+    },
+    "webserver": {
+        "api_key": "snip",
+        "host": "127.0.0.1",
+        "port": 5000
+    }
+}

@@ -1,0 +1,15 @@
+[Unit]
+Description=Athena AI
+Requires=pipewire.service
+
+[Service]
+Type=simple
+Environment="DISPLAY=:0"
+Environment="XAUTHORITY=/home/{USER}/.Xauthority"
+StandardOutput=append:/var/log/athena/app.log
+StandardError=append:/var/log/athena/app.log
+ExecStart=/usr/local/bin/athena
+Restart=on-failure
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,13 @@
+{
+    "server_key": "snip",
+    "porcupine_key": "snip",
+    "server_address": "athena.com",
+    "server_port": 443,
+    "voice": "freeman",
+    "commands": [
+        {
+            "prompt": "reboot",
+            "command": "reboot"
+        }
+    ]
+}

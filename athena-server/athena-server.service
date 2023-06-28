@@ -1,0 +1,15 @@
+[Unit]
+Description=Athena Server
+After=network.target
+
+[Service]
+Type=simple
+User=athena
+Group=athena
+StandardOutput=append:/var/log/athena/app.log
+StandardError=append:/var/log/athena/app.log
+ExecStart=/usr/local/bin/athena-server
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
