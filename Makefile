@@ -33,4 +33,3 @@ install_client:
 	cp -rf ./athena-client/*.py /opt/athena/
 	cp -rf ./athena-client/*.json /etc/athena/
 	cp -rf ./athena-client/*.service /opt/athena/
-	cp -rf ./athena-client/*.ppn /opt/athena/wake

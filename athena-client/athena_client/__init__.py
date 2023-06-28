@@ -43,7 +43,7 @@ def init():
         keyword_paths=[
             "/opt/athena/wake/athena_listen.ppn",
             "/opt/athena/wake/athena_request.ppn",
-            "/opt/athena/wake/athena_shutup.ppn",
+            "/opt/athena/wake/athena_quiet.ppn",
         ],
         access_key=CONFIG["porcupine_key"],
         sensitivities=[0.3, 0.3, 0.3],
