@@ -8,10 +8,10 @@ depend:
 	python3 -m pip install black
 
 format:
-	python3 -m black --line-length=88 athena-*/*
+	python3 -m black --line-length=88 athena-*/**/*.py athena-*/*.py
 
 check_format:
-	python3 -m black --line-length=88 --diff --verbose --check athena-*/*
+	python3 -m black --line-length=88 --diff --verbose --check athena-*/**/*.py --check athena-*/*.py
 
 install_server:
 	cd ./athena-server

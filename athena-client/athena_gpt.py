@@ -8,7 +8,7 @@ CONFIG = {
     "server_key": "snip",
     "server_address": "https://athena.com",
     "server_port": 443,
-    "voice": "freeman"
+    "voice": "freeman",
 }
 VOICE_DIR = f"/opt/athena/voice/{CONFIG['voice']}/"
 RESPONSES = {"error": f"{VOICE_DIR}error.ogg", "busy": f"{VOICE_DIR}busy.ogg"}

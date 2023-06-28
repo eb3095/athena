@@ -11,7 +11,7 @@ CONFIG = {
     "server_key": "snip",
     "server_address": "https://athena.com",
     "server_port": 443,
-    "voice": "freeman"
+    "voice": "freeman",
 }
 VOICE_DIR = f"/opt/athena/voice/{CONFIG['voice']}/"
 RESPONSES = {
@@ -138,7 +138,7 @@ def execute_command(text):
     if cmd == "what are you":
         play_sound(response="identify")
         return True
-    for command in CONFIG['commands']:
+    for command in CONFIG["commands"]:
         if command["name"] == cmd:
             play_sound(response="ack")
             execute(command["command"])
